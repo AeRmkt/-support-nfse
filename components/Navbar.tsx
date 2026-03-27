@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Menu, X, ChevronDown, MessageCircle } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,10 +13,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-gradient">Support</span>
-              <span className="text-[10px] tracking-widest text-gray-500 font-medium -mt-0.5">SOLUÇÕES INTELIGENTES</span>
-            </div>
+            <Image src="/logo-support.png" alt="Support Soluções Inteligentes" width={120} height={40} className="h-10 w-auto" />
           </div>
 
           {/* Desktop Nav Links */}
