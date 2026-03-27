@@ -1,7 +1,6 @@
 'use client'
 
 import { Headphones, Globe, Share2, Link2 } from 'lucide-react'
-import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -11,7 +10,8 @@ export default function Footer() {
           {/* Col 1 */}
           <div>
             <div className="mb-4">
-              <Image src="/logo-support.png" alt="Support Soluções Inteligentes" width={120} height={40} className="h-10 w-auto brightness-0 invert opacity-80" />
+              <span className="text-xl font-bold text-gradient">Support</span>
+              <div className="text-[10px] tracking-widest text-slate-500 font-medium">SOLUÇÕES INTELIGENTES</div>
             </div>
             <h4 className="text-slate-400 font-semibold text-sm mb-3 uppercase tracking-wide">Acesso Rápido</h4>
             <ul className="space-y-2">
