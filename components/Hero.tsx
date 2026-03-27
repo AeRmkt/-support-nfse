@@ -56,9 +56,9 @@ export default function Hero() {
             <Image
               src="/hero-dashboard.png"
               alt="Dashboard NF Support"
-              width={560}
-              height={420}
-              className="w-full max-w-lg rounded-2xl shadow-2xl"
+              width={720}
+              height={540}
+              className="w-full max-w-2xl rounded-2xl shadow-2xl"
               priority
             />
           </motion.div>
