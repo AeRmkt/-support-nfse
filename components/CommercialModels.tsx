@@ -1,21 +1,22 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Package, Star, BarChart, MessageCircle, ArrowRight } from 'lucide-react'
+import { ArrowRight, MessageCircle } from 'lucide-react'
+import { IconLayers, IconDiamond, IconActivity } from '@/components/icons/CustomIcons'
 
 const models = [
   {
-    icon: Package,
+    icon: IconLayers,
     title: 'Plano por pacote',
     description: 'Venda lotes mensais de emissão (ex.: 100, 500, 2.000 notas) e escale receita com previsibilidade.',
   },
   {
-    icon: Star,
+    icon: IconDiamond,
     title: 'Plano premium',
     description: 'Inclua emissão de NFS-e em planos avançados para aumentar percepção de valor e margem.',
   },
   {
-    icon: BarChart,
+    icon: IconActivity,
     title: 'Plano por uso',
     description: 'Cobrança por volume real emitido para equilibrar custo e valor entregue por cliente.',
   },
@@ -50,9 +51,7 @@ export default function CommercialModels() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="border border-gray-100 shadow-sm rounded-2xl p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 gradient-primary rounded-xl mb-4">
-                <model.icon size={22} className="text-white" />
-              </div>
+              <model.icon size={52} className="mb-4" />
               <h3 className="font-bold text-gray-900 text-lg mb-2">{model.title}</h3>
               <p className="text-gray-500 leading-relaxed">{model.description}</p>
             </motion.div>

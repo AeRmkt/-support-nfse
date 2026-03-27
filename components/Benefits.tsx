@@ -1,21 +1,22 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Zap, Shield, TrendingUp, MessageCircle } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
+import { IconBolt, IconShieldCheck, IconTrendUp } from '@/components/icons/CustomIcons'
 
 const benefits = [
   {
-    icon: Zap,
+    icon: IconBolt,
     title: 'Integração rápida',
     description: 'Em poucos dias seu sistema já pode emitir notas, sem criar módulo fiscal interno e sem ampliar equipe técnica.',
   },
   {
-    icon: Shield,
+    icon: IconShieldCheck,
     title: 'Conformidade contínua',
     description: 'Regras fiscais, mudanças de layout e exigências técnicas são atualizadas no gateway para reduzir risco operacional.',
   },
   {
-    icon: TrendingUp,
+    icon: IconTrendUp,
     title: 'Receita recorrente',
     description: 'Monetize por volume de emissão, aumente ticket médio e fortaleça retenção ao centralizar a jornada fiscal no seu sistema.',
   },
@@ -50,9 +51,7 @@ export default function Benefits() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="border border-gray-100 shadow-sm rounded-2xl p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 gradient-primary rounded-xl mb-4">
-                <benefit.icon size={22} className="text-white" />
-              </div>
+              <benefit.icon size={52} className="mb-4" />
               <h3 className="font-bold text-gray-900 text-lg mb-2">{benefit.title}</h3>
               <p className="text-gray-500 leading-relaxed">{benefit.description}</p>
             </motion.div>

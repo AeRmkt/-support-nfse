@@ -1,21 +1,22 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { BarChart2, Lock, Rocket, MessageCircle } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
+import { IconBarRevenue, IconUsers, IconRocket } from '@/components/icons/CustomIcons'
 
 const results = [
   {
-    icon: BarChart2,
+    icon: IconBarRevenue,
     title: 'Nova receita mensal',
     description: 'Crie planos por volume de emissão e aumente o ticket médio da sua base ativa.',
   },
   {
-    icon: Lock,
+    icon: IconUsers,
     title: 'Maior retenção',
     description: 'Quando o cliente emite NFS-e no seu sistema, a dependência positiva aumenta e o churn tende a cair.',
   },
   {
-    icon: Rocket,
+    icon: IconRocket,
     title: 'Escala com segurança',
     description: 'Expanda para mais municípios sem sobrecarregar sua equipe técnica com burocracia fiscal.',
   },
@@ -50,9 +51,7 @@ export default function Results() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="bg-slate-800 border border-slate-700 rounded-2xl p-6 hover:border-slate-600 transition-colors"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 gradient-primary rounded-xl mb-4">
-                <result.icon size={22} className="text-white" />
-              </div>
+              <result.icon size={52} className="mb-4" />
               <h3 className="font-bold text-white text-lg mb-2">{result.title}</h3>
               <p className="text-slate-400 leading-relaxed">{result.description}</p>
             </motion.div>
